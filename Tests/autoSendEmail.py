@@ -20,22 +20,13 @@ class LoginTest(unittest.TestCase):
 
         #login
         login_email = LoginPage(driver)
-        login_email.enter_username("phong.le@terralogic.com")
-        login_email.enter_password("phong78201330")
+        login_email.enter_username("<your email>")
+        login_email.enter_password("<your password>")
         login_email.click_login()
 
         #Send_email
         send_email = SendEmailPage(driver)
-        send_email.send_email("phong.lephong@hcmut.edu.vn","Hello I am done","Xin chào mọi người, tạm biệt nhé!")
-        # send_email = SendEmailPage(driver)
-        # send_email.send_email_button()
-        # send_email.receiver_email("phong.lephong@hcmut.edu.vn")
-        # send_email.title_email("Hello I am done")
-        # send_email.email("Xin chào mọi người, tạm biệt nhé!")
-        # send_email.file_import()
-        # time.sleep(15)
-        # send_email.send_button()
-        # time.sleep(15)       
+        send_email.send_email("<name reciever'semail>","<Your Title>","<Your messages>")     
 
     @classmethod
     def tearDownClass(cls):
