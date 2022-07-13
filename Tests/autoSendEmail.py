@@ -8,9 +8,10 @@ from AutoReportEmail.Pages.sendEmailPage import SendEmailPage
 
 class LoginTest(unittest.TestCase):
 
+    #Setup browers
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path='C:/Users/phong.le/Desktop/Python_selenium/drivers/chromedriver.exe')
+        cls.driver = webdriver.Chrome(executable_path='chromedriver.exe')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
